@@ -1,4 +1,40 @@
+@import url("https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap");
+
 * {
 	margin: 0;
 	padding: 0;
+	font-family: "Press Start 2P", cursive;
+	background-color: black;
+	color: white;
+}
+
+.App {
+	width: 100vw;
+	height: 100vh;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+}
+
+.board {
+	border: 2px dashed white;
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr;
+	grid-template-rows: 1fr 1fr 1fr;
+}
+
+.square {
+	height: 100px;
+	width: 100px;
+	border: 2px dashed white;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	cursor: pointer;
+	font-size: 40px;
+}
+
+.square:active {
+	background-color: rgb(15, 15, 15);
 }
